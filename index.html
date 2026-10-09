@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>For Ayusha • From Farhan ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff4d6d;
+      --secondary: #ff758f;
+      --accent: #590d22;
+      --gold: #d4af37;
+      --glass: rgba(255, 255, 255, 0.58);
+      --border: rgba(255, 255, 255, 0.75);
+      --shadow: 0 20px 45px rgba(224, 86, 126, 0.22);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: fixed;
+    }
+    body {
+      background: linear-gradient(145deg, #ffeef2 0%, #ffd6e0 40%, #ffc2d1 75%, #ffb3c6 100%);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #3a0d1e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ambient-glow {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(255, 77, 109, 0.35) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(40px);
+      z-index: 1;
+      animation: floatAura 9s infinite alternate ease-in-out;
+    }
+    @keyframes floatAura {
+      0% { transform: translate(-30%, -20%) scale(1); }
+      100% { transform: translate(30%, 25%) scale(1.2); }
+    }
+    .heart-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .petal {
+      position: absolute;
+      animation: fall 8s linear infinite;
+      opacity: 0.65;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-5vh) rotate(0deg); opacity: 0; }
+      15% { opacity: 0.8; }
+      100% { transform: translateY(105vh) rotate(360deg); opacity: 0; }
+    }
+    /* Music Disc Player Icon */
+    .vinyl-player {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      cursor: pointer;
+      font-size: 1.25rem;
+      transition: transform 0.25s ease;
+    }
+    .vinyl-player.spin {
+      animation: spinDisc 4s linear infinite;
+    }
+    @keyframes spinDisc {
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Main Aesthetic Card */
+    .card {
+      position: relative;
+      z-index: 2;
+      width: 89%;
+      max-width: 380px;
+      min-height: 520px;
+      background: var(--glass);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1.5px solid var(--border);
+      border-radius: 36px;
+      padding: 32px 24px 28px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    /* Progress Top */
+    .top-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 4px;
+    }
+    .badge {
+      font-size: 0.75rem;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #9b2242;
+      background: rgba(255, 255, 255, 0.75);
+      padding: 4px 12px;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .author-pill {
+      font-size: 0.72rem;
+      color: #c9184a;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* Dynamic Slide Animation */
+    .content-box {
+      margin: auto 0;
+      padding: 12px 0;
+      animation: elegantPop 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes elegantPop {
+      0% { opacity: 0; transform: scale(0.96) translateY(10px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .emoji-art {
+      font-size: 3.5rem;
+      margin-bottom: 14px;
+      display: inline-block;
+      filter: drop-shadow(0 6px 12px rgba(255, 77, 109, 0.25));
+    }
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+    }
+    p {
+      font-size: 0.98rem;
+      line-height: 1.6;
+      color: #5c1d30;
+      font-weight: 500;
+    }
+    .nepali-wrapper {
+      margin-top: 16px;
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      padding: 10px 14px;
+      border-radius: 18px;
+      box-shadow: 0 4px 14px rgba(255, 117, 143, 0.12);
+    }
+    .nepali-wrapper span {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #800f2f;
+      display: block;
+    }
+
+    /* Controls & Buttons */
+    .btn-dock {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      min-height: 60px;
+    }
+    button {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-main {
+      background: linear-gradient(135deg, #ff4d6d 0%, #c9184a 100%);
+      color: #fff;
+      padding: 13px 30px;
+      border-radius: 99px;
+      font-size: 0.96rem;
+      box-shadow: 0 10px 24px rgba(201, 24, 74, 0.35);
+      letter-spacing: 0.3px;
+    }
+    .btn-main:active {
+      transform: scale(0.96);
+    }
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.75);
+      color: #800f2f;
+      padding: 13px 24px;
+      border-radius: 99px;
+      font-size: 0.94rem;
+      border: 1px solid var(--border);
+    }
+
+    /* First "This is for you" Special Trigger Button */
+    .start-letter-btn {
+      background: linear-gradient(135deg, #ff4d6d 0%, #ff0054 100%);
+      color: white;
+      padding: 16px 36px;
+      border-radius: 99px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      box-shadow: 0 12px 28px rgba(255, 0, 84, 0.4);
+      animation: softHeartbeat 1.8s infinite;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    @keyframes softHeartbeat {
+      0%, 100% { transform: scale(1); box-shadow: 0 12px 28px rgba(255, 0, 84, 0.4); }
+      50% { transform: scale(1.05); box-shadow: 0 16px 32px rgba(255, 0, 84, 0.6); }
+    }
+
+    /* Proposal Yes & Dodging Cat Buttons */
+    .yes-super-btn {
+      background: linear-gradient(135deg, #ff0054 0%, #ff5400 100%);
+      color: #fff;
+      padding: 15px 36px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 99px;
+      box-shadow: 0 12px 30px rgba(255, 0, 84, 0.45);
+      animation: heartbeat 1.8s infinite;
+      z-index: 5;
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .cat-btn {
+      position: absolute;
+      background: #3c096c;
+      color: #ffd60a;
+      padding: 10px 18px;
+      border-radius: 99px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      border: 2px solid #fff;
+      box-shadow: 0 8px 20px rgba(60, 9, 108, 0.3);
+      transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 10;
+    }
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-glow"></div>
+  <div class="heart-bg" id="petalCanvas"></div>
+
+  <!-- Music element -->
+  <audio id="audioTrack" loop src="song.mp3"></audio>
+
+  <div class="vinyl-player" id="vinylIcon" onclick="toggleMusic(event)" title="Play / Pause Music">
+    🎧
+  </div>
+
+  <div class="card">
+    <div class="top-meta">
+      <span class="badge" id="slideIndex">Intro</span>
+      <span class="author-pill">Farhan ✨ Ayusha</span>
+    </div>
+
+    <div class="content-box" id="slideBody"></div>
+
+    <div class="btn-dock" id="btnGroup"></div>
+  </div>
+
+  <script>
+    const audio = document.getElementById('audioTrack');
+    const vinyl = document.getElementById('vinylIcon');
+    let musicStarted = false;
+
+    function playMusic() {
+      if (!musicStarted) {
+        audio.play().then(() => {
+          vinyl.classList.add('spin');
+          vinyl.innerText = '🎵';
+          musicStarted = true;
+        }).catch((err) => {
+          console.log("Audio playback waiting: ", err);
+        });
+      }
+    }
+
+    function toggleMusic(e) {
+      e.stopPropagation();
+      if (audio.paused) {
+        audio.play();
+        vinyl.classList.add('spin');
+        vinyl.innerText = '🎵';
+      } else {
+        audio.pause();
+        vinyl.classList.remove('spin');
+        vinyl.innerText = '🔇';
+      }
+    }
+
+    const slides = [
+      {
+        tag: "Welcome",
+        isIntro: true,
+        icon: "💌",
+        title: "This is for you",
+        text: "Hey Ayusha... Farhan has made something special straight from the heart. Put your earphones on and tap below.",
+        nepali: "तिमी मेरो जीवनको सबैभन्दा सुन्दर भावना हौ।"
+      },
+      {
+        tag: "01 / 15",
+        icon: "🌸",
+        title: "Hey Ayusha",
+        text: "It's Farhan. I curated this quiet, aesthetic space exclusively for you.",
+        nepali: "मुस्कुराऊ न, तिम्रो हाँसो संसारकै सबैभन्दा प्यारो छ।"
+      },
+      {
+        tag: "02 / 15",
+        icon: "✨",
+        title: "Soft Sunrise",
+        text: "Just like sunlight kissing the hills, your presence brings effortless warmth to my life.",
+        nepali: "तिमी मेरो जीवनमा आएपछि सबै कुरा सुन्दर लाग्न थाल्यो।"
+      },
+      {
+        tag: "03 / 15",
+        icon: "🏔️",
+        title: "Pahadi Grace",
+        text: "Calm, serene, and timeless—there is an unmatched peace whenever I am around you.",
+        nepali: "हिमाल जस्तै शान्त र निष्कपट तिम्रो मुहार।"
+      },
+      {
+        tag: "04 / 15",
+        icon: "☕",
+        title: "Our Whispers",
+        text: "Late-night chats or brief moments—every second speaking with you is my favourite.",
+        nepali: "तिमीसँगको हरेक कुराकानी मेरो दिनको सबैभन्दा राम्रो पल बन्छ।"
+      },
+      {
+        tag: "05 / 15",
+        icon: "🤍",
+        title: "That Smile",
+        text: "No exaggeration—you possess the sweetest smile capable of fixing my entire week.",
+        nepali: "तिम्रो त्यो मिठो हाँसोले मनै पग्लिन्छ।"
+      },
+      {
+        tag: "06 / 15",
+        icon: "💫",
+        title: "Graceful Details",
+        text: "The way you speak, your laughter, your gentle soul—it’s impossible not to admire you.",
+        nepali: "हरेक सानो कुरामा तिमी विशेष लाग्छौ।"
+      },
+      {
+        tag: "07 / 15",
+        icon: "🎶",
+        title: "An Old Melody",
+        text: "Like a classic tune played softly on repeat, your thoughts linger in my head.",
+        nepali: "तिम्रो याद सधैं मसँगै रहन्छ।"
+      },
+      {
+        tag: "08 / 15",
+        icon: "🌙",
+        title: "Quiet Evenings",
+        text: "No matter how busy Farhan's world gets, my thoughts quietly anchor right back to you.",
+        nepali: "रात जति गहिरिन्छ, तिम्रो याद त्यति नै आउँछ।"
+      },
+      {
+        tag: "09 / 15",
+        icon: "💎",
+        title: "Pure & Rare",
+        text: "In a world of artificial connections, finding someone as real as you is a blessing.",
+        nepali: "तिमी जस्तो निष्कलंक अरु कोही भेटिनँ।"
+      },
+      {
+        tag: "10 / 15",
+        icon: "🌷",
+        title: "Beyond Friendship",
+        text: "Somewhere quietly in between, my admiration grew into something eternal.",
+        nepali: "साथीभन्दा धेरै, मेरो मुटुको धड्कन हौ तिमी।"
+      },
+      {
+        tag: "11 / 15",
+        icon: "🕊️",
+        title: "A Gentle Vow",
+        text: "Farhan promises to always honour your heart, respect your dreams, and keep you smiling.",
+        nepali: "सधैं तिम्रो साथ निभाउनेछु।"
+      },
+      {
+        tag: "12 / 15",
+        icon: "⏳",
+        title: "A Heartbeat Away",
+        text: "Take a gentle breath... we are stepping into the question that matters most.",
+        nepali: "मुटुको धड्कन अलि तेज भयो कि?"
+      },
+      {
+        tag: "13 / 15",
+        icon: "💌",
+        title: "From My Soul",
+        text: "I spent hours crafting this detail by detail because words alone couldn't hold what I feel.",
+        nepali: "मेरो मनको कुरा आज तिमीलाई भन्दैछु।"
+      },
+      {
+        tag: "14 / 15",
+        icon: "💍",
+        title: "Ayusha...",
+        text: "Will you hold Farhan's hand and walk this lifetime with me?",
+        nepali: "म तिमीलाई धेरै माया गर्छु (Ma Timilai Maya Garchhu) ❤️"
+      },
+      {
+        tag: "15 / 15",
+        icon: "🕊️💕",
+        title: "Forever Us",
+        text: "You just made Farhan the happiest man in this universe. I promise you a lifetime of love.",
+        nepali: "हाम्रो प्रेम सधैं यस्तै अटुट रहोस्! ❤️✨"
+      }
+    ];
+
+    let current = 0;
+
+    function startExperience() {
+      playMusic();
+      current = 1;
+      renderSlide();
+    }
+
+    function renderSlide() {
+      const item = slides[current];
+      document.getElementById('slideIndex').innerText = item.tag;
+
+      let markup = `
+        <div class="emoji-art">${item.icon}</div>
+        <h1>${item.title}</h1>
+        <p>${item.text}</p>
+        <div class="nepali-wrapper"><span>${item.nepali}</span></div>
+      `;
+
+      const btnGroup = document.getElementById('btnGroup');
+
+      if (current === 0) {
+        // First "This is for you" click button screen
+        btnGroup.innerHTML = `
+          <button class="start-letter-btn" onclick="startExperience()">
+            Open For You 💖
+          </button>
+        `;
+      } else if (current === 14) {
+        // Proposal screen
+        btnGroup.innerHTML = `
+          <button class="yes-super-btn" onclick="acceptProposal()">Yes! Always 💕</button>
+          <button id="catDodge" class="cat-btn" onmouseover="teleportCat()" ontouchstart="teleportCat()">No 🐾</button>
+        `;
+      } else if (current === 15) {
+        // Final screen
+        btnGroup.classList.add('hidden');
+      } else {
+        // Normal slides (1 to 13)
+        btnGroup.classList.remove('hidden');
+        btnGroup.innerHTML = `
+          <button class="btn-ghost" id="backBtn" onclick="prevSlide()">← Back</button>
+          <button class="btn-main" id="forwardBtn" onclick="nextSlide()">Next →</button>
+        `;
+        document.getElementById('backBtn').style.visibility = (current === 1) ? 'hidden' : 'visible';
+      }
+
+      const body = document.getElementById('slideBody');
+      body.innerHTML = markup;
+      body.style.animation = 'none';
+      body.offsetHeight;
+      body.style.animation = null;
+    }
+
+    function nextSlide() {
+      if (current < slides.length - 1) {
+        current++;
+        renderSlide();
+      }
+    }
+
+    function prevSlide() {
+      if (current > 1) {
+        current--;
+        renderSlide();
+      }
+    }
+
+    function acceptProposal() {
+      current = 15;
+      renderSlide();
+      celebrateMagic();
+    }
+
+    const catPhrases = ["Nuh-uh 🐱", "Catch me! 💨", "Too slow! 🐾", "Meow, nope! 😹", "Farhan only! 💕"];
+    let catIndex = 0;
+
+    function teleportCat() {
+      const cat = document.getElementById('catDodge');
+      if (!cat) return;
+      cat.innerText = catPhrases[catIndex % catPhrases.length];
+      catIndex++;
+      
+      const offsetX = Math.floor(Math.random() * 220) - 110;
+      const offsetY = Math.floor(Math.random() * 150) - 75;
+      const rotate = Math.floor(Math.random() * 26) - 13;
+      cat.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${rotate}deg)`;
+    }
+
+    function spawnPetals() {
+      const container = document.getElementById('petalCanvas');
+      const icons = ['🌸', '✨', '🤍', '💖', '🕊️'];
+      for (let i = 0; i < 22; i++) {
+        const petal = document.createElement('div');
+        petal.className = 'petal';
+        petal.innerHTML = icons[Math.floor(Math.random() * icons.length)];
+        petal.style.left = Math.random() * 100 + 'vw';
+        petal.style.animationDuration = (5 + Math.random() * 5) + 's';
+        petal.style.animationDelay = (Math.random() * 6) + 's';
+        petal.style.fontSize = (0.9 + Math.random() * 1.2) + 'rem';
+        container.appendChild(petal);
+      }
+    }
+
+    function celebrateMagic() {
+      const container = document.getElementById('petalCanvas');
+      const party = ['💖', '✨', '💍', '🌸', '💐'];
+      for (let i = 0; i < 70; i++) {
+        setTimeout(() => {
+          const spark = document.createElement('div');
+          spark.className = 'petal';
+          spark.innerHTML = party[Math.floor(Math.random() * party.length)];
+          spark.style.left = Math.random() * 100 + 'vw';
+          spark.style.animationDuration = '3.2s';
+          spark.style.fontSize = '2.2rem';
+          container.appendChild(spark);
+        }, i * 40);
+      }
+    }
+
+    spawnPetals();
+    renderSlide();
+  </script>
+</body>
+</html>
